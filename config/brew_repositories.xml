@@ -1,0 +1,41 @@
+<projects platform="BREW">
+	<project>
+		<name>TestSVNProject</name>
+		<description>A Test Project in SVN</description>
+		<depends>BREW_Framework</depends>
+		<location>https://svn/brew/projects/test/trunk/</location>
+	</project>
+
+	<!-- Add More Projects here -->
+
+	<project>
+		<name>CustomCVSProject</name>
+		<description>Custom Project </description>
+		<location cvsroot="cvs.test.com:/cvs">projects/CustomCVSProject</location>
+		<builders style="custom">
+			<!-- autopublish="false"> -->
+
+			<small>
+				<local command="build_starbucks sml local"/>
+				<release command="build_starbucks sml release"/>
+				<nightly command="build_starbucks sml nightly"/>
+			</small>
+			<medium>
+				<local command="build_starbucks med local"/>
+				<release command="build_starbucks med release"/>
+				<nightly command="build_starbucks med nightly"/>
+			</medium>
+			<large>
+				<local command="build_starbucks lrg local"/>
+				<release command="build_starbucks lrg release"/>
+				<nightly command="build_starbucks lrg nightly"/>
+			</large>
+		</builders>
+		<depends>BREW_Framework</depends>
+		<j2me_project>CustomCVSProject</j2me_project>
+	</project>
+	<project>
+		<name>BREW_Framework</name>
+		<location>https://svn/brew/projects/trunk/BREW_Framework/trunk/</location>
+	</project>
+</projects>

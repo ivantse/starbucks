@@ -1,0 +1,20 @@
+How to compile with setup.py
+============================
+
+Generally, you can just run make_exe.bat and it will compile the executable(s)
+into the dist/ directory.
+
+However, for this to work, you'll need certain libraries/bindings for your
+installation of Python.
+
+
+Requirements:
+=============
+  - Python 2.5 (maybe earlier version like 2.4 may work, but untested)
+  - pySVN bindings
+  - py2exe bindings
+
+
+
+Ivan Tse
+BREW Team (DP)

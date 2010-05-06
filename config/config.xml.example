@@ -1,0 +1,16 @@
+<!-- IMPORTANT: rename this file to config.xml to let starbucks use it -->
+
+<!-- DO NOT COMMIT config.xml to SVN! -->
+
+<config>
+	<!-- this is the place where starbucks will check out projects to -->
+	<workspaces>
+		<brew>c:\starbucks\brew</brew>
+		<j2me>c:\starbucks\j2me</j2me>
+
+		<!-- or even relative to starbucks (default)
+		<brew>brew</brew>
+		<j2me>j2me</j2me>
+		-->
+	</workspaces>
+</config>

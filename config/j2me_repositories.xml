@@ -1,0 +1,16 @@
+<projects platform="J2ME">
+	<project>
+		<name>TestSVNJavaProject</name>
+		<description>Test SVN Java Project</description>
+		<location>https://svn/projects/TestSVNJavaProject/trunk</location>
+		<depends>J2ME_Framework</depends>
+	</project>
+
+	<!-- Add More Projects here -->
+
+	<project>
+		<name>J2ME_Framework</name>
+		<dirname>j2me_framework</dirname>
+		<location>https://svn/j2me_framework/trunk/</location>
+	</project>
+</projects>
